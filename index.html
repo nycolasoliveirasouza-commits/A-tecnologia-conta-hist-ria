@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Tecnologia Conta História</title>
+
+    <!-- Ligação com o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav>
+            <div class="logo">🌿 A Tecnologia Conta História</div>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#territorios">Territórios</a></li>
+                <li><a href="#povos">Povos Indígenas</a></li>
+                <li><a href="#biodiversidade">Biodiversidade</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#desafios">Desafios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h1>A Tecnologia Conta História</h1>
+
+            <h2>
+                Uma viagem pelo território do Grão-Pará e Maranhão
+            </h2>
+
+            <div class="mission">
+
+                <h3>🎯 SUA MISSÃO</h3>
+
+                <p>
+                    Você acaba de chegar no Grão-Pará.
+                    Será capaz de identificar os elementos
+                    históricos, culturais e ambientais desse território?
+                </p>
+
+            </div>
+
+            <a href="#mapa" class="btn">
+                🚀 Começar a exploração
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAPA -->
+    <section class="map-section" id="mapa">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>🗺️ Mapa dos Territórios</h2>
+
+                <p>
+                    Clique nos territórios para iniciar sua exploração.
+                </p>
+
+            </div>
+
+            <div class="map-box">
+
+                <div class="map-title">
+                    🌎 Territórios
+                </div>
+
+                <button
+                    class="territory para"
+                    onclick="mostrarTerritorio('para')">
+                    Grão-Pará
+                </button>
+
+                <button
+                    class="territory maranhao"
+                    onclick="mostrarTerritorio('maranhao')">
+                    Maranhão
+                </button>
+
+            </div>
+
+            <div class="map-info" id="mapInfo"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TERRITÓRIOS -->
+    <section id="territorios">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>🌎 Explore os Territórios</h2>
+
+                <p>
+                    Conheça a história e as características desses territórios.
+                </p>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-icon">🌳</div>
+
+                    <h3>Grão-Pará</h3>
+
+                    <p>
+                        Conheça a história, cultura e características
+                        do território do Grão-Pará.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">🏞️</div>
+
+                    <h3>Maranhão</h3>
+
+                    <p>
+                        Explore aspectos históricos, culturais e
+                        ambientais do Maranhão.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">🌊</div>
+
+                    <h3>Rios e Território</h3>
+
+                    <p>
+                        Descubra a importância dos rios para as
+                        comunidades e para o território.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- POVOS INDÍGENAS -->
+    <section id="povos" class="light-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>🪶 Povos Indígenas</h2>
+
+                <p>
+                    Conheça culturas, conhecimentos e territórios.
+                </p>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-icon">🪶</div>
+
+                    <h3>Diversidade Cultural</h3>
+
+                    <p>
+                        Os povos indígenas possuem diferentes culturas,
+                        línguas e histórias.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+
+                    <h3>Conhecimentos</h3>
+
+                    <p>
+                        Conhecimentos tradicionais ajudam a compreender
+                        a relação entre sociedade e natureza.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">🏹</div>
+
+                    <h3>Territórios</h3>
+
+                    <p>
+                        Os territórios indígenas possuem grande
+                        importância cultural, social e ambiental.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIODIVERSIDADE -->
+    <section id="biodiversidade">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>🌿 Biodiversidade</h2>
+
+                <p>
+                    Conheça a diversidade dos ambientes e espécies.
+                </p>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-icon">🐆</div>
+
+                    <h3>Animais</h3>
+
+                    <p>
+                        A região possui grande diversidade de animais.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">🌳</div>
+
+                    <h3>Florestas</h3>
+
+                    <p>
+                        As florestas são importantes para os ecossistemas
+                        e para a vida.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">🐟</div>
+
+                    <h3>Rios</h3>
+
+                    <p>
+                        Os rios possuem grande importância para as
+                        comunidades e para a biodiversidade.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">🌺</div>
+
+                    <h3>Plantas</h3>
+
+                    <p>
+                        Existe uma grande diversidade de plantas
+                        na região amazônica.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTÓRIA -->
+    <section class="history" id="historia">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>📜 Linha do Tempo</h2>
+
+                <p>
+                    Conheça diferentes momentos da história.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h3>Antes da colonização</h3>
+
+                    <p>
+                        Diferentes povos indígenas já ocupavam
+                        e estabeleciam relações com esses territórios.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Período colonial</h3>
+
+                    <p>
+                        A região passou por processos de ocupação
+                        e transformações sociais e territoriais.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Transformações</h3>
+
+                    <p>
+                        Diferentes atividades econômicas modificaram
+                        os territórios e suas paisagens.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Território atual</h3>
+
+                    <p>
+                        Atualmente, diferentes povos e comunidades
+                        continuam construindo suas histórias.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURIOSIDADES -->
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>💡 Curiosidades</h2>
+
+                <p>
+                    Descubra informações interessantes.
+                </p>
+
+            </div>
+
+
+            <div class="curiosity-box">
+
+                <h3>Você sabia?</h3>
+
+                <p id="curiosity">
+                    Clique no botão para descobrir uma curiosidade.
+                </p>
+
+                <button class="btn" onclick="novaCuriosidade()">
+                    🔎 Descobrir curiosidade
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DESAFIOS -->
+    <section class="quiz-section" id="desafios">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>🎯 Desafios da Expedição</h2>
+
+                <p>
+                    Teste seus conhecimentos!
+                </p>
+
+            </div>
+
+
+            <div class="quiz">
+
+                <div class="question">
+
+                    <h3>
+                        1. O que podemos estudar no território
+                        do Grão-Pará e Maranhão?
+                    </h3>
+
+                    <button class="answer"
+                        onclick="responder(this, false)">
+                        Apenas tecnologia.
+                    </button>
+
+                    <button class="answer"
+                        onclick="responder(this, true)">
+                        História, cultura e ambiente.
+                    </button>
+
+                    <button class="answer"
+                        onclick="responder(this, false)">
+                        Apenas animais.
+                    </button>
+
+                </div>
+
+
+                <div class="question">
+
+                    <h3>
+                        2. Os povos indígenas são:
+                    </h3>
+
+                    <button class="answer"
+                        onclick="responder(this, false)">
+                        Povos apenas do passado.
+                    </button>
+
+                    <button class="answer"
+                        onclick="responder(this, true)">
+                        Povos com culturas vivas até hoje.
+                    </button>
+
+                    <button class="answer"
+                        onclick="responder(this, false)">
+                        Um único povo.
+                    </button>
+
+                </div>
+
+
+                <div class="question">
+
+                    <h3>
+                        3. Qual elemento é importante
+                        para compreender a região?
+                    </h3>
+
+                    <button class="answer"
+                        onclick="responder(this, true)">
+                        Rios e florestas.
+                    </button>
+
+                    <button class="answer"
+                        onclick="responder(this, false)">
+                        Apenas cidades.
+                    </button>
+
+                    <button class="answer"
+                        onclick="responder(this, false)">
+                        Apenas estradas.
+                    </button>
+
+                </div>
+
+
+                <div id="score">
+                    Pontuação: 0
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final">
+
+        <div class="container">
+
+            <h2>🏆 Missão Concluída!</h2>
+
+            <p>
+                Agora você conhece diferentes elementos históricos,
+                culturais e ambientais do Grão-Pará e Maranhão.
+            </p>
+
+            <button class="btn" onclick="voltarInicio()">
+                🔄 Refazer a expedição
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            🌿 <span>A Tecnologia Conta História</span>
+        </p>
+
+        <p>
+            Projeto educativo sobre história, cultura,
+            território e biodiversidade.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function mostrarTerritorio(territorio) {
+
+            const info = document.getElementById("mapInfo");
+
+            info.style.display = "block";
+
+            if (territorio === "para") {
+
+                info.innerHTML = `
+                    <h2>🌿 Grão-Pará</h2>
+                    <p>
+                        Conheça a história, a cultura e os
+                        ambientes relacionados ao território
+                        do Grão-Pará.
+                    </p>
+                `;
+
+            }
+
+            if (territorio === "maranhao") {
+
+                info.innerHTML = `
+                    <h2>🏞️ Maranhão</h2>
+                    <p>
+                        Explore aspectos históricos, culturais
+                        e ambientais do Maranhão.
+                    </p>
+                `;
+
+            }
+
+        }
+
+
+        const curiosidades = [
+
+            "Os rios possuem grande importância para a vida e circulação de diferentes comunidades.",
+
+            "Os povos indígenas possuem grande diversidade de línguas e culturas.",
+
+            "A biodiversidade inclui animais, plantas, fungos e microrganismos.",
+
+            "Mapas ajudam a compreender mudanças nos territórios ao longo do tempo.",
+
+            "A tecnologia pode ajudar a preservar e apresentar informações históricas."
+
+        ];
+
+
+        let indiceCuriosidade = 0;
+
+
+        function novaCuriosidade() {
+
+            document.getElementById("curiosity").innerText =
+                curiosidades[indiceCuriosidade];
+
+            indiceCuriosidade++;
+
+            if (indiceCuriosidade >= curiosidades.length) {
+                indiceCuriosidade = 0;
+            }
+
+        }
+
+
+        let pontuacao = 0;
+
+
+        function responder(botao, correta) {
+
+            const botoes =
+                botao.parentElement.querySelectorAll(".answer");
+
+            botoes.forEach(function(btn) {
+                btn.disabled = true;
+            });
+
+
+            if (correta) {
+
+                botao.classList.add("correct");
+
+                pontuacao += 10;
+
+            } else {
+
+                botao.classList.add("wrong");
+
+            }
+
+
+            document.getElementById("score").innerText =
+                "Pontuação: " + pontuacao + " pontos";
+
+
+            if (pontuacao === 30) {
+
+                setTimeout(function() {
+
+                    alert(
+                        "🏆 PARABÉNS!\n\n" +
+                        "Você completou todos os desafios!"
+                    );
+
+                }, 300);
+
+            }
+
+        }
+
+
+        function voltarInicio() {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+            location.reload();
+
+        }
+
+    </script>
+
+</body>
+</html>
